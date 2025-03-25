@@ -87,7 +87,7 @@ nav a{
     width: 175px;
     height: 55px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 main{
@@ -98,6 +98,9 @@ main{
     display: grid;
     grid-template-columns:repeat(4, minmax(0, 262.5px));
     grid-template-rows: 1fr 1fr 1fr;
+    font-family: Inter;
+    color: #fff;
+    font-weight: 800;
 }
 
 .mission-statement-block{
@@ -107,8 +110,47 @@ main{
     border-radius: 5px;
     height: 315px;
     width: 450px;
+    padding: 30px;
     align-self: center;
     justify-self: center;
+    text-align: center;
+}
+
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.mission-text h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.mission-text p {
+    font-size: 15px;
+    font-weight: 550;
+    color: white;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #66E0FF;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quote-block{
