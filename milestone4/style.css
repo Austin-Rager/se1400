@@ -96,19 +96,11 @@ main{
     grid-row: 3;
     background-color: rgba(0,0,0,.03);
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-=======
     grid-template-columns:repeat(4, minmax(0, 262.5px));
     grid-template-rows: 1fr 1fr 1fr;
-<<<<<<< HEAD
     font-family: Inter;
     color: #fff;
     font-weight: 800;
-=======
->>>>>>> 45eab78d60f430b475f2dd59210bf4af7b7c5880
->>>>>>> 68b051ac3e682c51723816dfe52b0fe5894c1593
 }
 
 .mission-statement-block{
@@ -140,10 +132,10 @@ main{
 }
 
 .mission-text p {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 550;
     color: white;
-    line-height: 1.6;
+    line-height: 1.35;
     max-width: 400px;
 }
 
@@ -151,7 +143,7 @@ main{
     display: inline-block;
     background-color: #66E0FF;
     color: #fff;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 16px;
     padding: 12px 20px;
     border-radius: 7px;
@@ -168,32 +160,123 @@ main{
     border-radius: 5px;
     height: 315px;
     width: 450px;
+    padding: 30px;
     align-self: center;
     justify-self: center;
+    text-align: center;
 }
 
-.equipment-block{
-    grid-row: 3;
-    grid-column: 1/-1;
-    background-color: #1A82F1;
-    border-radius: 5px;
-    height: 315px;
-    width: 975px;
-    align-self: center;
-    justify-self: center;
+.quote-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.quote-block-text h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .truck-block{
     grid-row: 2;
     grid-column: 1/-1;
+    display: grid; 
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: #1A82F1;
     border-radius: 5px;
-    height: 315px;
-    width: 975px;
+    padding: 20px;
+    max-width: 975px;
+    margin: auto;
     align-self: center;
-    justify-self: center; 
+    justify-self: center;
 }
 
+.semi-truck-image{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    grid-row: 1 / span 2;
+}
+
+.truck-block-text{
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.truck-block-text p{
+    font-weight: 550;
+}
+
+.semi-truck-button{
+    justify-self: center;
+    align-self: end;
+    background-color: #66E0FF;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-block {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    display: grid; 
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1A82F1;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 975px;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.equipment-image{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    grid-row: 1 / span 2; 
+}
+
+.equipment-block-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.equipment-block-text p{
+    font-weight: 550;
+}
+
+.equipment-block a {
+    justify-self: center;
+    align-self: end;
+    background-color: #66E0FF;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .footbar{
     grid-column: 1/-1;
