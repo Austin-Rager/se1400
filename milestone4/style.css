@@ -51,7 +51,7 @@ nav a{
     font-size: 20px ;
 
 }
-.hero{
+.hero {
     height: 406px;
     grid-column: 1/-1;
     grid-row: 2;
@@ -59,11 +59,21 @@ nav a{
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('images/pexels-kelly-1179532-4320468.jpg');
     background-repeat: no-repeat;
     background-position: 0%;
-    background-size:cover;
-    filter: brightness(75%);    
+    background-size: cover;
+    filter: brightness(75%);
 }
 
 .cta{
@@ -72,6 +82,7 @@ nav a{
     align-self: end;
     color: #fff;
     font-family: Inter;
+    z-index: 1;
 }
 
 .contact_button{
@@ -88,6 +99,7 @@ nav a{
     height: 55px;
     border: none;
     border-radius: 7px;
+    z-index: 1;
 }
 
 main{
@@ -109,7 +121,7 @@ main{
     background-color: #1A82F1;
     border-radius: 5px;
     height: 315px;
-    width: 450px;
+    max-width: 450px;
     padding: 30px;
     align-self: center;
     justify-self: center;
@@ -119,7 +131,6 @@ main{
 .mission-text {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
     text-align: left;
 }
@@ -153,9 +164,12 @@ main{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.quote-block{
+.quote-block {
     grid-row: 1;
     grid-column: 3/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     background-color: #1A82F1;
     border-radius: 5px;
     height: 315px;
@@ -167,67 +181,92 @@ main{
 }
 
 .quote-block-text {
+    grid-column: 1;
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: left;
-    text-align: left;
 }
 
 .quote-block-text h2 {
     font-size: 24px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: white;
+}
+
+.quote-form {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-form input, 
+.quote-form select {
+    padding: 4px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.quote-form select{
+    color: #333;
+}
+
+.quote-block select option[disabled] {
+    color: #888;
+}
+
+.quote-block select option:not([disabled]) {
+    color: #333;
+}
+
+.quote-form input[type="submit"] {
+    background-color: #66E0FF;
+    color: white;
+    border: none;
+    font-family: Inter;
+    border-radius: 7px;
+    padding: 12px 20px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    align-self: center;
+    width: auto;
+    min-width: 145px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .truck-block{
     grid-row: 2;
     grid-column: 1/-1;
-    display: grid; 
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto auto;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     background-color: #1A82F1;
     border-radius: 5px;
     padding: 20px;
     max-width: 975px;
     margin: auto;
-    align-self: center;
-    justify-self: center;
 }
 
 .semi-truck-image{
     width: 100%;
     max-width: 200px;
     border-radius: 5px;
-    grid-row: 1 / span 2;
+    margin-right: 20px;
 }
 
 .truck-block-text{
-    flex-grow: 1;
+    flex: 1;
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 .truck-block-text p{
     font-weight: 550;
-}
-
-.semi-truck-button{
-    justify-self: center;
-    align-self: end;
-    background-color: #66E0FF;
-    color: white;
-    font-weight: 800;
-    font-size: 16px;
-    padding: 12px 20px;
-    border-radius: 7px;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .equipment-block {
@@ -258,21 +297,25 @@ main{
 .equipment-block-text {
     font-size: 18px;
     line-height: 1.5;
+    grid-column: 2/4;
 }
 
 .equipment-block-text p{
     font-weight: 550;
 }
 
-.equipment-block a {
+.service-button{
+    grid-column: 1/-1;
+    grid-row: 4;
+    display: inline-block;
     justify-self: center;
-    align-self: end;
     background-color: #66E0FF;
-    color: white;
+    color: #fff;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 20px;
     padding: 12px 20px;
     border-radius: 7px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -280,7 +323,7 @@ main{
 
 .footbar{
     grid-column: 1/-1;
-    grid-row: 4;
+    grid-row: 5;
     background-color: rgba(0,123,255);
 }
 
@@ -290,7 +333,7 @@ footer{
     align-items: center;
     height: 45px;
     grid-column: 2/8;
-    grid-row: 4;
+    grid-row: 5;
     background-color: rgba(0,123,255);
     color: #fff;
     padding: 5px 20px;

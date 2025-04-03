@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,57 +46,49 @@
 
             <div class="quote-block">
                 <div class="quote-block-text">
-                    <h2>
-                        Receive a quote
-                    </h2>
-                    <form method="post">
-                        <label for="Name">Name</label>
-                        <input type="text" id="Name" name="first_name" required>
-                        <label for="email">E-mail Address</label>
-                        <input type="email" id="email" name="email_address" required>
-                        <label for="telephone">Phone Number</label>
-                        <input type="tel" id="telephone" name="phone_number" required>
-                        <label for="address">Address</label>
-                        <input type="text" id="address" autocomplete="street-address" required>
-                        <label for="city">City</label>
-                        <input type="text" id="address" autocomplete="address-level2">
-                        <label for="service_type">Type of Service:</label>
-                        <select id="service" name="service" required>
-                            <option value="semi-truck">Semi-Truck Cleaning</option>
-                            <option value="dump-truck">Dump Truck Cleaning</option>
-                            <option value="fleet">Fleet Vehicle Cleaning</option>
-                            <option value="heavy-machinery">Heavy Machinery Cleaning</option>
-                            <option value="other">Other (Please Specify)</option>
-                        </select>
-                        <label for="submit">Submit</label>
-                        <input type="submit" id="submit">
-                    </form>
+                    <h2>Receive a quote</h2>
                 </div>
+                <form method="post" class="quote-form">
+                    <input type="text" id="Name" name="first_name" required placeholder="Name">
+                    <input type="email" id="email" name="email_address" required placeholder="E-mail Address">
+                    <input type="tel" id="telephone" name="phone_number" required placeholder="Phone Number">
+                    <input type="text" id="address" autocomplete="address-level1" required placeholder="Address">
+                    <input type="text" id="city" autocomplete="address-level2" placeholder="City">
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Type of Service</option>
+                        <option value="semi-truck">Semi-Truck Cleaning</option>
+                        <option value="dump-truck">Dump Truck Cleaning</option>
+                        <option value="fleet">Fleet Cleaning</option>
+                        <option value="heavy-machinery">Heavy Machinery Cleaning</option>
+                    </select>
+                    <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
             </div>
             <div class="truck-block">
                 <img src="images/gilbert_truck.jpg" alt="Semi-Truck" class="semi-truck-image">
-            <div class="truck-block-text">
+                <div class="truck-block-text">
                     <h2>
                         Have a Semi-Truck that needs cleaning?
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-            </div>
-                <a href="#" class="semi-truck-button">Learn More</a>
+                </div> 
             </div>
             <div class="equipment-block">
                 <img src="images/IMG_0485.JPEG" alt="Excavator" class="equipment-image">
-            <div class="equipment-block-text">
+                <div class="equipment-block-text">
                     <h2>
                         Very dirty and greasy piece of equipment?
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+                </div>
             </div>
-                <a href="#" class="equipment-button">Learn More</a>
-            </div>
+            <a href="#" class="service-button"> click here to learn about our services!</a>
         </main>
         <footer> 
 
