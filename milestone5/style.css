@@ -540,8 +540,8 @@ footer{
         }
 
         main {
-            padding: 0;  /* Remove padding */
-            grid-gap: 0; /* Remove grid gaps */
+            padding: 5px;
+            grid-gap: 0;
             display: flex;
             flex-direction: column;
         }
