@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milestone 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ponomar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bar"></div>
+        <header>
+            <a href="index.html"><img src="images/JT_smaller.png" alt="Powerwashing logo" width="300"></a>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="footbar"></div>
+        <main style="grid-template-rows: 1fr 1fr; height: 800px;">
+            <div class="about_block">
+                <h2>
+                    ABOUT J.T POWERWASHING
+                </h2>
+                <p>
+                    We have been in the powerwashing business for up to five years. We started this seeing as there are many fleets semi-trucks and heavy machinery which are dirty roaming the streets.
+                    and we saw it as an opportunity to be able to do some service to them and bring them to life! Throughout these five years. We have perfected our method of cleaning utilizing the best chemicals
+                    that are out there, and using the necessary tools to be able to ensure the best care to our client's machines. We provide service to some of the top dirt hauling and land development companies
+                    here in southern utah. 
+                </p>
+            </div>
+            <div class="quote_block_2">
+            <h1> RECIEVE A QUOTE</h1>
+            <form method="post" class="quote-form-2">
+                <input type="text" id="Name" name="first_name" required placeholder="Name">
+                <input type="email" id="email" name="email_address" required placeholder="E-mail Address">
+                <input type="tel" id="telephone" name="phone_number" required placeholder="Phone Number">
+                <input type="text" id="address" autocomplete="address-level1" required placeholder="Address">
+                <input type="text" id="city" autocomplete="address-level2" placeholder="City">
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Type of Service</option>
+                    <option value="semi-truck">Semi-Truck Cleaning</option>
+                    <option value="dump-truck">Dump Truck Cleaning</option>
+                    <option value="fleet">Fleet Cleaning</option>
+                    <option value="heavy-machinery">Heavy Machinery Cleaning</option>
+                </select>
+                <div class="submit">
+                <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+            </div>
+        </main>
+        <footer> 
+
+            <div class="left-text">
+                J.T Powerwashing
+            </div>
+            <div class="right-text">
+                <div>(435)-705-3040</div>
+                <div>email.email@gmail.com</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
