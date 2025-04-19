@@ -451,13 +451,23 @@ footer{
 .page_blocks{
     grid-column: 1/-1;
     grid-row: 1/-1;
+    width: 925px;
+    justify-self: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 1.75rem;
+    margin-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(0, 123, 255);
 }
 
+.page_blocks img{
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 @media only screen and (max-width: 992px){
     .wrapper {
@@ -520,6 +530,12 @@ footer{
         margin-bottom: 6px;
     }    
 
+    .quote_block_2{
+        width: 734px;
+        margin-top: 12px;
+    }
+
+    .about_block,
     .truck-block{
         width: 734px;
     }
@@ -551,7 +567,16 @@ footer{
     .footbar{
         grid-row: 6;
     }
+
+    .page_blocks{
+        width: 734px;
+    }
+
+    .page_blocks img{
+        width: 350px;
+    }
 }
+
 
     @media only screen and (max-width: 768px) {
 
@@ -647,6 +672,8 @@ footer{
             flex-direction: column;
         }
 
+        .quote_block_2,
+        .about_block,
         .quote-block,
         .truck-block,
         .equipment-block {
@@ -657,4 +684,10 @@ footer{
         header{
             display: none;
         }
-    }
+
+        .page_blocks{
+            width: 100%;
+            margin: 0px;
+        }
+
+        }
