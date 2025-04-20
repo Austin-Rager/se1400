@@ -213,6 +213,16 @@ main img{
     grid-column: 1/-1;
 }
 
+.shoppingcart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shoppingcart img{
+    width: 100%;
+    height: auto;
+}
+
 footer{
     font-size: .70rem;
     font-style: italic;
@@ -306,6 +316,10 @@ tr:nth-of-type(even){
         width: 100%;
         height: auto;
     }
+
+    .shoppingcart{
+        grid-template-columns: repeat(2, 1fr);
+    }
 } 
 
 @media only screen and (max-width: 600px){
@@ -338,5 +352,9 @@ tr:nth-of-type(even){
 
     .shophero{
         display: none;
+    }
+
+    .shoppingcart{
+        grid-template-columns: 1fr;
     }
 }
