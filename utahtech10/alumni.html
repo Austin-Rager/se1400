@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script> 
+    function validateForm() {
+         if (document.forms[0].myEmail.value == "" ) {
+              alert("Please enter an e-mail address.");
+              return false;
+         } // end if
+         return true;
+    } // end function validateForm
+    </script>
+<title>Utah Tech University :: Alumni</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="wrapper">
+    <div class ="bluebar"></div>
+    <div class ="greybar"></div>
+  <header>
+   <h1><a href ='index.html'>Utah Tech University</a></h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="alumni.html">Alumni</a></li>
+        <li><a href="shop.html">Shop</a></li>
+    </ul>
+</nav>
+
+  <div class = "alumnihero"></div>
+  <main>
+    <h2>Join Alumni Mailing List</h2>
+    <h3>Request Alumni Newsletter</h3>
+    <p>Required information is marked with an asterisk (*).</p>
+    <form action="https://kearl.net/se1400/mail.php" method="post" onsubmit="return validateForm();">
+        <label for="myFName"> First name:</label>
+        <input type="text" id="myFName" name="first_name" required>
+        <label for="myLName"> Last name:</label>
+        <input type="text" id="myLName" name="last_name" required>
+        <label for="myEmail">* E-Mail:</label>
+        <input type="text" id="myEmail" name="myEmail" required>
+        <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="phone">
+        <label for="myGraddate">Graduation Date:</label>
+        <input type="date" id="myGraddate" name="grad_date">
+        <label for="myComments"> Comments:</label>
+        <textarea id="myComments" name="comments" rows="2" cols="20" required></textarea><br>
+        <input type="submit" id="mySubmit">
+    </form>
+  </main>
+  <footer>
+      Copyright &copy; 2025 Utah Tech University<br>
+      <a href="mailto:D00417898@utahtech.edu">D00417898@utahtech.edu</a>
+  </footer>
+    </div>
+</body>
+</html>
