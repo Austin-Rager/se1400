@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milestone 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ponomar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bar"></div>
+        <header>
+            <a href="index.html"><img src="images/JT_smaller.png" alt="Powerwashing logo" width="300"></a>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2 class="cta"> POWER WASHING SERVICE LOCATED IN SOUTHERN UTAH </h2>
+        
+            <button class="contact_button" onclick="document.location='about.html'">
+                CONTACT US
+            </button>
+        </div>
+        <div class="footbar"></div>
+        <main>
+            <div class="mission-statement-block">
+                <div class="mission-text">
+                    <h2>
+                        Excellence is a standard.
+                    </h2>
+                    <p>
+                        Here at J.T Powerwashing we take pride in our work and have a high standard, ensuring that the end product in the cleaning of every machine that we wash will meet our standards and ulitimately your standards. 
+                        We promise that you will be left amazed at how clean your machine will be.
+                    </p>
+                </div>
+                <a href="service.html" class="button">Learn More</a>
+            </div>
+
+            <div class="quote-block">
+                <div class="quote-block-text">
+                    <h2>Receive a quote</h2>
+                </div>
+                <form method="post" class="quote-form">
+                    <input type="text" id="Name" name="first_name" required placeholder="Name">
+                    <input type="email" id="email" name="email_address" required placeholder="E-mail Address">
+                    <input type="tel" id="telephone" name="phone_number" required placeholder="Phone Number">
+                    <input type="text" id="address" autocomplete="address-level1" required placeholder="Address">
+                    <input type="text" id="city" autocomplete="address-level2" placeholder="City">
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Type of Service</option>
+                        <option value="semi-truck">Semi-Truck Cleaning</option>
+                        <option value="dump-truck">Dump Truck Cleaning</option>
+                        <option value="fleet">Fleet Cleaning</option>
+                        <option value="heavy-machinery">Heavy Machinery Cleaning</option>
+                    </select>
+                    <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+            <div class="truck-block">
+                <img src="images/gilbert_truck.jpg" alt="Semi-Truck" class="semi-truck-image">
+                <div class="truck-block-text">
+                    <h2>
+                        Have a Semi-Truck that needs cleaning?
+                    </h2>
+                    <p>
+                        Keeping semi-trucks clean is crucial for maintaining their appearance and performance. Professional drivers know that regular washing removes road grime, salt, and debris that can cause corrosion. We start by using high-pressure washers to blast away tough dirt from the truck's exterior. We pay special attention to the wheels,
+                        undercarriage, and chrome surfaces. We alo use specialized truck cleaning products that protect the paint and metal surfaces, ensuring your rig looks sharp and stays in top condition on long hauls.
+                    </p>
+                </div> 
+            </div>
+            <div class="equipment-block">
+                <img src="images/IMG_0485.JPEG" alt="Excavator" class="equipment-image">
+                <div class="equipment-block-text">
+                    <h2>
+                        Very dirty and greasy piece of equipment?
+                    </h2>
+                    <p>
+                        Cleaning heavy equipment is crucial for maintaining performance and extending machinery life. We carefully clean hydraulic components, undercarriages, and the many mechanical parts. We pay special attention to hard-to-reach areas and sensitive electronic systems. This sort of cleaning protects critical components, prevents corrosion, and ensures optimal functioning during demanding work conditions.
+                    </p>
+                </div>
+            </div>
+            <a href="service.html" class="service-button"> click here to learn about our services!</a>
+        </main>
+        <footer> 
+
+            <div class="left-text">
+                J.T Powerwashing
+            </div>
+            <div class="right-text">
+                <div>(435)-705-3040</div>
+                <div>email.email@gmail.com</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
